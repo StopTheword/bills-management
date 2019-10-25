@@ -1,5 +1,4 @@
-(function() {
-    'use strict';
+function basic_fuc(){
     var $ = window.$;
     var detialType_default = $('#detialType').val();
     if(typeof(detialType_default) != "undefined"){
@@ -40,8 +39,9 @@
             }
        })
     }
+}
 
-    function pad_data(detialType){
+ function pad_data(detialType){
         //填充数据
      //  $('input').attr("readonly",false);
         $('#pad_data').click(function(){
@@ -466,4 +466,3 @@
        // console.log(detialType);
         //禁用表单不可修改
     }
-})();
